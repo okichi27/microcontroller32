@@ -42,8 +42,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+// A variable to store the previous state of the button
 int btn_prev = 0;
+// Variable to store the current state of the button
 int btn_cur = 0;
+// Variable to store LED state
 int led_state=0;
 
 /* USER CODE END PV */
@@ -101,25 +105,37 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+    // Read the current state on GPIO_PIN_0 (the button is built-in)
 	  btn_cur=HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
 
+    // If the previous state of the button was 0 and the current state of the button is not 0
 	  if (( btn_prev == 0 ) && ( btn_cur != 0 )) {
+      // Switch LED state
 		  led_state=!led_state;
-
 	  }
+
+    // Update the button's previous state
 	  btn_prev=btn_cur;
 
+    // If the LED is on
 	  if (led_state){
+      // Setting the level of GPIO_PIN_13 to high (LED on)
 		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+      // Delay for 500 milliseconds (0,5 second)
 		  HAL_Delay(500);
+      // Set GPIO_PIN_13 level to low (LED off)
 		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-		  HAL_Delay(500);  }
+      // Delay for 500 milliseconds (0,5 second)
+		  HAL_Delay(500);  
+    }
+    // If the LED is off
 	  else {
+      // Setting the level of GPIO_PIN_13 to high (LED on)
 		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+      // Delay for 200 milliseconds (0,2 second)
 		  HAL_Delay(200);
 	  }
-
-
+    
   }
   /* USER CODE END 3 */
 }

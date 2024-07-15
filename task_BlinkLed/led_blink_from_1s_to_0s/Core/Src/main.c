@@ -87,7 +87,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+
+  // Initialize variable n to 1000(milliseconds)
   int n = 1000;
+  // Initialize the state variable to store the state of GPIO_PIN_0 (the button is built-in)
   int state = 1;
 
     /* USER CODE END 2 */
@@ -99,18 +102,26 @@ int main(void)
       /* USER CODE END WHILE */
 
       /* USER CODE BEGIN 3 */
-
+      // Read GPIO_PIN_0 status on GPIOA port(the button is built-in)
       state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+
+      // If the button is not pressed (state is not equal to 1)
       if ( state != 1 ) {
-      n = n  - 100;
-      if (n <= 0) {
-         n = 1000;
-              }
+        // Decrement n by 100 milliseconds
+        n = n  - 100;
+        // If the value of n is less than or equal to 0, return it to 1000 milliseconds
+        if (n <= 0) {
+          n = 1000;
+                }
       }
 
+      // Setting the level of GPIO_PIN_13 to high (LED on)
       HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+      // Delay for n milliseconds
       HAL_Delay(n);
+      // Set GPIO_PIN_13 level to low (LED off)
       HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+      // Delay for n milliseconds
       HAL_Delay(n);
 
   }

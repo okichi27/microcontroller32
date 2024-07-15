@@ -87,8 +87,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  int n = 1000;
-  int decrement=499;
 
   /* USER CODE END 2 */
 
@@ -100,9 +98,13 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+    // Setting the level of GPIO_PIN_13 to high (LED on)
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+    // Delay for 1000 milliseconds (1 second)
 	  HAL_Delay(1000);
+    // Set GPIO_PIN_13 level to low (LED off)
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+    // Delay for 1000 milliseconds (1 second)
 	  HAL_Delay(1000);
 
   }
