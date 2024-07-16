@@ -102,14 +102,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  uint16_t step;
-//	  HAL_ADC_Start(&hadc1);
-//	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-//	  step = HAL_ADC_GetValue(&hadc1);
-//	  step = step*8;
-//
-//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, step );
-
   }
   /* USER CODE END 3 */
 }
