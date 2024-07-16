@@ -21,8 +21,12 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+// Library for working with input/output functions
 #include "stdio.h"
+// Library for working with strings
 #include "string.h"
+// Library for working with data types with defined size
 #include "inttypes.h"
 /* USER CODE END Includes */
 
@@ -33,7 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define BUFF_SIZE 1024
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -67,6 +71,8 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+// Variable for storing the read ADC value
 uint16_t readValue;
 /* USER CODE END 0 */
 
@@ -87,8 +93,10 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  //uint32_t buff[BUFF_SIZE];
+
+  // Message buffer
   char msg[50];
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -106,9 +114,13 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  // Start the ADC and transfer the value via UART
   if (HAL_ADC_Start(&hadc1) != HAL_OK) {
+    // If it was not possible to start the ADC, we generate an error and output it via UART
     sprintf(msg, "ADC Start Error\r\n");
+    // Send the string via UART
     HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+    // Error handler
     Error_Handler();
   }
 
@@ -118,20 +130,31 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    // We check whether the conversion to ADC is complete
     if (HAL_ADC_PollForConversion(&hadc1, 1000) == HAL_OK) {
+      // If the conversion is complete, read the value from the ADC
       readValue = HAL_ADC_GetValue(&hadc1);
 
+      
+      // Form a string with the ADC value
       sprintf(msg, "ADC value: %" PRIu32 "\r\n", readValue);
+      // Send the string via UART
       if (HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY) != HAL_OK) {
+        // If there is a transmission error via UART, generate an error and output it
         sprintf(msg, "UART Transmit Error\r\n");
+        // Send the string via UART
         HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+        // Error handler
         Error_Handler();
       }
     } else {
+      // If it was not possible to complete the conversion to the ADC, we generate an error and output it
       sprintf(msg, "ADC Poll Error\r\n");
+      // Send the string via UART
       HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
     }
 
+    // Delay before next cycle
     HAL_Delay(1000);
 
     /* USER CODE END WHILE */
