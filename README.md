@@ -26,7 +26,10 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 > [!NOTE]
 > To view a specific project, enter the branch with the name of the project and continue reading it.
 
-# stm32 (in Ukrainian)
+---
+---
+
+# STM32 (українською)
 
 > **Цей репозиторій призначений проектам з stm32 !!** :shipit:
 
