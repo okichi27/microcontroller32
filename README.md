@@ -1,7 +1,8 @@
-# **stm32 (in English)** 
+# **STM32 (in English)** 
 > **This repository is for projects with stm32 !!** :shipit:
 
-Here will be collected the projects that I managed to execute on stm32 (stm32f103c8t6 / stm32f401ceu6 ). First there will be a description in English, then in Ukrainian. **The repository has several branches with the following projects**:
+Here will be collected the projects that I managed to execute on stm32 (stm32f103c8t6 / stm32f401ceu6 ). First there will be a description in English, then in Ukrainian. 
+**The repository has several branches with the following projects:**
 ---
 1. **blink_built_in_led** - a project that uses the simplest built-in LED blinking function on stm32;
 2. **led_blink_only_btn_press** - a project about dependence on the LED blinking button;
@@ -18,7 +19,8 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 10. ** ** - ;
 11. ** ** - ;
 
-To view a specific project, enter the branch with the name of the project and continue reading it.
+> [!NOTE]
+> To view a specific project, enter the branch with the name of the project and continue reading it.
 
 # stm32 (in Ukrainian)
 
