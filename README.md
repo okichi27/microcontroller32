@@ -7,7 +7,7 @@
 Here will be collected the projects that I managed to execute on stm32 (stm32f103c8t6 / stm32f401ceu6 ).
 
 **The repository has several branches with the following projects:**
----
+
 1. **blink_built_in_led** - a project that uses the simplest built-in LED blinking function on stm32;
 2. **led_blink_only_btn_press** - a project about dependence on the LED blinking button;
 3. **led_blink_from_1s_to_0s** -  a project about the dependence of the LED blinking speed on the button;
@@ -37,7 +37,7 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 Тут будуть зібрані проекти, які я виконала на stm32 (stm32f103c8t6 / stm32f401ceu6 ). 
 
 **Репозиторій налічує декілька гілок з такими проектами:**
----
+
 1. **blink_built_in_led** - проект, який використовує найпростішу функцію мигання вбудованого світлодіода на stm32;
 2. **led_blink_only_btn_press** - проект, про залежність від кнопки блимання світлодіода;
 3. **led_blink_from_1s_to_0s** - проект, про залежність від кнопки швидкості блимання світлодіода;
