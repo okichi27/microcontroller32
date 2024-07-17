@@ -26,7 +26,10 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 > [!NOTE]
 > To view a specific project, enter the branch with the name of the project and continue reading it.
 
+
+
 ---
+:shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit:
 ---
 
 # STM32 (українською)
@@ -52,5 +55,5 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 10. ** ** - ;
 11. ** ** - ;
 
-> [!Примітка]
+> [!NOTE]
 > Для перегляду конкретного проекту - увійдіть на гілку з назвою проекту і далі читайте його.
