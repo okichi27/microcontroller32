@@ -52,5 +52,5 @@ Here will be collected the projects that I managed to execute on stm32 (stm32f10
 10. ** ** - ;
 11. ** ** - ;
 
-> [!NOTE]
+> [!Примітка]
 > Для перегляду конкретного проекту - увійдіть на гілку з назвою проекту і далі читайте його.
