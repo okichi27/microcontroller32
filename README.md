@@ -1,18 +1,18 @@
 # **stm32 (in English)** 
 > **This repository is for projects with stm32 !!** :shipit:
 
-Here will be collected the projects that I managed to execute on stm32 (stm32f103c8t6 / stm32f401ceu6 ). First there will be a description in English, then in Ukrainian. The repository has several branches with the following projects:
-
-    1. **blink_built_in_led** - a project that uses the simplest built-in LED blinking function on stm32;
-    2. **led_blink_only_btn_press** - a project about dependence on the LED blinking button;
-    3. **led_blink_from_1s_to_0s** -  a project about the dependence of the LED blinking speed on the button;
-
+Here will be collected the projects that I managed to execute on stm32 (stm32f103c8t6 / stm32f401ceu6 ). First there will be a description in English, then in Ukrainian. **The repository has several branches with the following projects**:
+---
+1. **blink_built_in_led** - a project that uses the simplest built-in LED blinking function on stm32;
+2. **led_blink_only_btn_press** - a project about dependence on the LED blinking button;
+3. **led_blink_from_1s_to_0s** -  a project about the dependence of the LED blinking speed on the button;
+---
 4. **message_transfer_via_USB** - project using USB;
-
+---
 5. **PWM** - a project that generates a PWM signal on channel 1 of timer 1;
 6. **ADC_with_UART** - a project to transfer ADC values ​​via UART;
 7. **ADC_with_RWM** - a project implementing ADC data transmission via the RWM;
-
+---
 8. ** ** - ;
 9. ** ** - ;
 10. ** ** - ;
