@@ -1,9 +1,9 @@
-# **blink_built_in_led (in English)** 
+# **STM32-blink_built_in_led (in English)** 
 
 > [!NOTE]
 > First there will be a description in English, then in Ukrainian. 
 
-This branch contains the project of the same name **blink_built_in_led** - a project that uses the simplest function to blink the built-in LED on stm32;
+This branch contains the project of the same name **blink_built_in_led** - a project that uses the simplest function to blink the built-in LED on STM32;
 
 ## Description
 
@@ -62,9 +62,9 @@ user code.
 ---
 :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: 
 
-# **blink_built_in_led (українською)**
+# **STM32-blink_built_in_led (українською)**
 
-Ця гілка містить одноіменний проект **blink_built_in_led** - проект, який використовує найпростішу функцію на мигання вбудованого світлодіода на stm32;
+Ця гілка містить проект **blink_built_in_led** - проект, який використовує найпростішу функцію на мигання вбудованого світлодіода на STM32;
 
 ## Опис
 
