@@ -8,7 +8,7 @@ Here will be collected the projects that I have done on 32-bit microcontrollers,
 
 **The repository has several branches with the following projects:**
 ---
-- ON STM32:
+### ON STM32:
 ---
 1. **STM32-blink_built_in_led** - a project that uses the simplest built-in LED blinking function on stm32;
 2. **STM32-led_blink_only_btn_press** - a project about dependence on the LED blinking button;
@@ -23,7 +23,7 @@ Here will be collected the projects that I have done on 32-bit microcontrollers,
 8. ** ** - ;
 9. ** ** - ;
 ---
-- ON ESP32:
+### ON ESP32:
 ---
 1. ** ** - ;
 2. ** ** - ;
