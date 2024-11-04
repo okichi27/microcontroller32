@@ -4,7 +4,7 @@
 > [!NOTE]
 > First there will be a description in English, then in Ukrainian. 
 
-Here will be collected the projects that I have done on 32-bit microcontrollers, in particular STM32 (STM32F103C8T6 / STM32F401CEU6 ) and ESP32 (ESPRESSIF ESP32-WROOM-32).
+Here will be collected the projects that I have done on 32-bit microcontrollers, in particular STM32 (STM32F103C8T6 / STM32F401CEU6 / STM32F401CCU6) and ESP32 (ESPRESSIF ESP32-WROOM-32).
 
 **The repository has several branches with the following projects:**
 ---
@@ -20,7 +20,7 @@ Here will be collected the projects that I have done on 32-bit microcontrollers,
 6. **STM32-ADC_with_UART** - a project to transfer ADC values ​​via UART;
 7. **STM32-ADC_with_RWM** - a project implementing ADC data transmission via the RWM;
 ---
-8. ** ** - ;
+8. **STM32-PWM_registers** - a project that implements the generation of a PWM signal on a 10 timer without using the HAl library, written in registers;
 9. ** ** - ;
 ---
 ### ON ESP32:
@@ -40,7 +40,7 @@ Here will be collected the projects that I have done on 32-bit microcontrollers,
 # microcontroller32 (українською)
 > **Цей репозиторій призначений проектам з 32-бітними мікроконтролерами !!** :shipit:
 
-Тут будуть зібрані проекти, які я виконала на 32-бітних мікроконтролерах, зокрема на STM32 (STM32F103C8T6 / STM32F401CEU6 ) та ESP32 (ESPRESSIF ESP32-WROOM-32). 
+Тут будуть зібрані проекти, які я виконала на 32-бітних мікроконтролерах, зокрема на STM32 (STM32F103C8T6 / STM32F401CEU6 / STM32F401CCU6) та ESP32 (ESPRESSIF ESP32-WROOM-32). 
 
 **Репозиторій налічує декілька гілок з такими проектами:**
 ---
@@ -52,11 +52,11 @@ Here will be collected the projects that I have done on 32-bit microcontrollers,
 ---
 4. **STM32-message_transfer_via_USB** - проект з використанням USB;
 ---
-5. **STM32-PWM** - проект, який робить генерацію сигналу ШІМ на каналі 1 таймера 1; 
+5. **STM32-PWM** - проект, який генерує сигналу ШІМ на каналі 1 таймера 1; 
 6. **STM32-ADC_with_UART** - проект по передачі значень АЦП через UART;
 7. **STM32-ADC_with_RWM** - проект, що реалізує передавання даних АЦП через протокол RWM;
 ---
-8. ** ** - ;
+8. **STM32-PWM_registers** - проект, який реалізує генерацію сигналу ШІМ на 10 таймері без використання бібліотеки HAl, написано на регістрах;
 9. ** ** - ;
 ---
 ### ПО ESP32:
